@@ -1,5 +1,5 @@
 * {
-  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 
   /*border: solid 3px red;*/
@@ -11,12 +11,48 @@
   --brand-second-color: #14d9c4;
   --text-header-color: white;
   --text-main-color: #54585a;
-
-  /* tipografía */
-  --titles-font-family: Rubik-Medium;
-  --main-text-font-family: OpenSans;
 }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
+      format("woff2");
+}
+
+/* header */
+
+.header {
+  background-image: url(./img/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 421px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Código Lissandra */
+
+/* menu del grupo */
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  opacity: 0.9;
+  background-color: var(--brand-second-color);
+}
+
+.container-menu {
+  width: 100%;
+}
 
 /* nombre del grupo */
 .group-name {
@@ -36,15 +72,7 @@
   line-height: 1.88;
   margin: 15px 80px;
 }
-/* menu del grupo */
-.menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 45px;
-  opacity: 0.9;
-  background-color: var(--brand-second-color);
-}
+
 .ul-menu {
   display: flex;
   justify-content: space-around;
@@ -52,13 +80,16 @@
   list-style: none;
   width: 100%;
 }
+
 .list {
   display: inline;
   font-size: 15px;
   font-weight: 500;
   line-height: 2;
-  padding: 8px 15px 7px 15px;
+  padding: 8px 0px 7px 0px;
+  text-align: center;
 }
+
 .link {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
@@ -66,6 +97,68 @@
   font-size: 15px;
   font-weight: 500;
   /* line-height: 2px; */
+}
+
+/* slogan */
+
+.slogan {
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  background-color: white;
+  width: 90.625%;
+  height: 80px;
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+
+/* EQUIPO - fortalezas y debilidades */
+
+.team-container {
+  margin-top: 70px;
+}
+
+.article-one,
+.article-two {
+  font: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+
+  width: 100%; /*320px;*/ /* width: 100% cuando el responsive?*/
+  height: auto;
+  display: block;
+  padding: 0 15px 0 15px;
+}
+
+.team-description {
+  font: "Open Sans";
+  color: var(--brand-second-color);
+  text-align: center;
+}
+.mini-rectangle {
+  width: 30px; /*en responsive tiene que crecer?*/
+  height: 30px;
+  transform: rotate(45deg) translateY(-30px);
+  background-color: var(--text-header-color);
+  position: absolute;
+  left: 50%; /*50% cuando pasemos  a responsive=?*/
+}
+.article-two {
+  background: #b8b8b9;
+}
+.group-atributes {
+  font: "Open Sans";
+  color: var(--brand-first-color);
+  text-align: center;
+  font-size: 22px;
 }
 
 /*Textos*/
