@@ -19,8 +19,10 @@
   font-weight: 300;
   font-display: swap;
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-    url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
-      format("woff2");
+    url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap)
+      rel= "stylesheet" >;
+  /* url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
+      format("woff2"); */
 }
 
 /* header */
@@ -122,43 +124,45 @@
 
 /* EQUIPO - fortalezas y debilidades */
 
-.team-container {
-  margin-top: 70px;
+.article-two::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  /* border: 2px solid blue; */
+  transform: rotate(45deg) translate(-55px, -10px);
+  background-color: var(--text-header-color);
 }
-
 .article-one,
 .article-two {
-  font: "Open Sans";
+  font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
-
+  color: var(--text-main-color);
   width: 100%; /*320px;*/ /* width: 100% cuando el responsive?*/
   height: auto;
   display: block;
-  padding: 0 15px 0 15px;
+  padding: 30px;
+  margin-top: 15px;
 }
 
 .team-description {
-  font: "Open Sans";
+  font-family: "Open Sans";
+  font-weight: 700;
   color: var(--brand-second-color);
   text-align: center;
+  margin: 30px 30px 15px 30px;
 }
-.mini-rectangle {
-  width: 30px; /*en responsive tiene que crecer?*/
-  height: 30px;
-  transform: rotate(45deg) translateY(-30px);
-  background-color: var(--text-header-color);
-  position: absolute;
-  left: 50%; /*50% cuando pasemos  a responsive=?*/
-}
+
 .article-two {
   background: #b8b8b9;
 }
 .group-atributes {
-  font: "Open Sans";
+  font-family: "Open Sans";
   color: var(--brand-first-color);
   text-align: center;
   font-size: 22px;
+  padding: 20px;
 }
 
 /*Textos*/
@@ -170,7 +174,7 @@
 }
 .name,
 .description {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 1.5;
 }
@@ -289,4 +293,20 @@ a {
 
 img {
   width: 100px;
+}
+
+@media all and (min-width: 768px) {
+  .group-atributes-strenghts,
+  .group-atributes-weaks {
+    padding: 20px;
+    width: 49%;
+  }
+  .article-two {
+    display: flex;
+  }
+  .article-two::before {
+    position: relative;
+    left: 50%;
+    transform: rotate(0deg);
+  }
 }
