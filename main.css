@@ -1,5 +1,6 @@
 * {
   padding: 0px;
+  box-sizing: border-box;
 
   /*border: solid 3px red;*/
 }
@@ -15,15 +16,9 @@
   --titles-font-family: Rubik-Medium;
   --main-text-font-family: OpenSans;
 }
+/* Código Lissandra */
 
-/*Nosotras*/
-.photo {
-  border: 5px solid rgba(0, 0, 0, 0.08);
-  margin: 10px auto;
-  display: block;
-  border-radius: 4px;
-}
-
+/*Textos*/
 .name,
 .about-us,
 .description {
@@ -52,6 +47,14 @@
 .description {
   color: var(--text-main-color);
 }
+
+/*Fotografías integrantes*/
+.photo {
+  border: 5px solid rgba(0, 0, 0, 0.08);
+  margin: 10px auto;
+  display: block;
+  border-radius: 4px;
+}
 /* /iconos de redes sociales */
 
 .icon {
@@ -62,18 +65,18 @@
 .contact-me {
   width: 100%;
   display: inline-flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   line-height: 1;
 }
 
-li,
-.contact-me {
+/* poner class */
+li {
   list-style: none;
   text-align: center;
 }
 .dot::after {
-  font-size: 15px;
+  font-size: 16px;
   content: "∙";
   color: var(--text-main-color);
 }
@@ -81,7 +84,7 @@ li,
 /* Código Susana */
 .footerbox {
   /* border: solid; */
-  box-sizing: border-box;
+
   justify-content: flex;
   display: flex;
   flex-direction: column;
@@ -91,8 +94,8 @@ li,
 }
 
 .footer-menu {
-  box-sizing: border-box;
   font-size: 14px;
+  margin-top: 10px;
   /* margin-right: 45px; */
   font-family: "Open Sans", sans-serif;
   font-style: bold;
@@ -117,7 +120,6 @@ a {
 }
 
 .item3 {
-  /* border: solid purple; */
   box-sizing: border-box;
 }
 
@@ -131,22 +133,12 @@ a {
   font-size: 14px;
   color: #b8b8b9;
   margin-top: 30px;
-  /* width: 172px;
-  margin-left: 74px;
-  margin-right: 74px;
- */
   text-align: center;
-  /* border: solid blue; */
-  box-sizing: border-box;
 }
 
 .logo {
   margin: 32px 101px 45px 102px;
   box-sizing: border-box;
-  /* margin-bottom: 45px;
-  margin-left: 102px;
-  margin-right: 101px;
-  border: solid yellow; */
   order: 2;
 }
 
