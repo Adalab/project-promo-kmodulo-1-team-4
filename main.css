@@ -18,6 +18,56 @@
 }
 /* Código Lissandra */
 
+/* nombre del grupo */
+.group-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-first-color);
+  opacity: 0.95;
+  height: 60px;
+}
+.name-ada {
+  color: var(--text-header-color);
+  font-family: "Rubik", sans-serif;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
+  margin: 15px 80px;
+}
+/* menu del grupo */
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  opacity: 0.9;
+  background-color: var(--brand-second-color);
+}
+.ul-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+.list {
+  display: inline;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+  padding: 8px 15px 7px 15px;
+}
+.link {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: var(--text-header-color);
+  font-size: 15px;
+  font-weight: 500;
+  /* line-height: 2px; */
+}
+
 /*Textos*/
 .name,
 .about-us,
@@ -68,13 +118,15 @@
   /* flex-direction: row; */
   justify-content: center;
   line-height: 1;
-}
-
-/* poner class */
-li {
   list-style: none;
   text-align: center;
 }
+
+/* poner class 
+li {
+  list-style: none;
+  text-align: center;
+}*/
 .dot::after {
   font-size: 16px;
   content: "∙";
@@ -101,7 +153,7 @@ li {
   font-style: bold;
   color: var(--text-main-color);
 }
-ul .footer {
+.footer {
   list-style: none;
   text-align: center;
 }
