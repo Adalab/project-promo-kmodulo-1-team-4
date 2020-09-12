@@ -2,8 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
-  /*border: solid 3px red;*/
 }
 
 /* colores */
@@ -23,7 +21,7 @@
     url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap)
       rel= "stylesheet" >;
   /* url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
-      format("woff2"); 
+      format("woff2");
 } */
 
 /* header */
@@ -90,7 +88,6 @@
   line-height: 2;
   padding: 8px 0px 7px 0px;
   text-align: center;
-  width: 33.3%;
 }
 
 .link {
@@ -125,15 +122,25 @@
 
 /* EQUIPO - fortalezas y debilidades */
 
+/* .article-two::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg) translate(-55px, -10px);
+  background-color: var(--text-header-color);
+} */
+
 .article-two::before {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
-  /* border: 2px solid blue; */
-  transform: rotate(45deg) translate(-55px, -10px);
+  border: 2px solid blue;
+  transform: rotate(45deg) translate(-30px, 10px);
   background-color: var(--text-header-color);
 }
+
 .article-one,
 .article-two {
   font-family: "Open Sans";
@@ -149,14 +156,18 @@
 
 .team-description {
   font-family: "Open Sans";
-  font-weight: 700;
+  /* font-weight: 700; */
   color: var(--brand-second-color);
   text-align: center;
   margin: 30px 30px 15px 30px;
 }
 
-.article-two {
+/* .article-two {
   background: rgba(184, 184, 185, 0.2);
+} */
+
+.article-two {
+  background-color: rgb(209, 204, 204);
 }
 
 .group-atributes {
@@ -276,4 +287,199 @@ a {
 
 img {
   width: 100px;
+}
+
+@media all and (min-width: 768px) {
+  /* header */
+  .header {
+    align-items: flex-start;
+  }
+
+  /* Lissandra */
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    opacity: 0.95;
+    padding: 0 45px;
+    background-color: var(--brand-first-color);
+  }
+
+  .group-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .name-ada {
+    margin: 0;
+    padding: 0;
+  }
+  .group-name,
+  .menu {
+    background-color: var(--brand-first-color);
+    opacity: 0.95;
+    height: 60px;
+  }
+  .ul-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  .list {
+    padding: 0;
+    margin: 16px 0px 14px 19px;
+  }
+
+  /* Teresa */
+  .slogan {
+    width: 57.42%;
+    top: 0px;
+    left: 46px;
+    background-color: rgba(256, 256, 256, 0.8);
+    justify-content: right;
+    padding: 30px;
+  }
+
+  /* QUIÉNES SOMOS - Marina */
+  .resp-about {
+    display: flex;
+  }
+  .resp-about:nth-child(2n + 1) {
+    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: right;
+  }
+
+  .responsive-l {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .responsive-l .name,
+  .responsive-l .description {
+    text-align: left;
+  }
+  .responsive-l .contact-me {
+    justify-content: left;
+  }
+
+  .responsive-r .name,
+  .responsive-r .description {
+    text-align: right;
+  }
+  .responsive-r .contact-me {
+    justify-content: right;
+  }
+  .photo {
+    width: 205px;
+    justify-content: left;
+    margin-left: 44px;
+    margin-right: 44px;
+  }
+  /* .description {
+    text-align: left;
+    margin-top: -10px;
+  } */
+  /* .name {
+    text-align: left;
+  }*/
+
+  /* Footer */
+  .footerbox {
+    /* background-color: cyan; Cambio por Teresa */
+    border-top: #54585a solid 1px; /* Cambio por Teresa */
+    max-width: 768px; /* tal vez 100% ? */
+    max-height: 170px;
+    justify-content: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* cambios por Teresa 
+
+  .copy-logo {
+    display: flex;
+    flex-direction: column;
+    align-items
+  } */
+
+  ul.footer {
+    position: relative;
+    left: 350px;
+    top: -1px;
+    line-height: 2.14;
+  }
+
+  .logo {
+    position: relative;
+    left: -500px;
+    top: 40px;
+  }
+}
+
+/* version DESKTOP */
+
+@media all and (min-width: 1200px) {
+  /* Parte Lissandra */
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    opacity: 0.95;
+    padding: 0 138px 0 142px;
+    background-color: var(--brand-first-color);
+  }
+
+  /* Teresa */
+
+  .list {
+    width: 33.3%;
+  }
+
+  .list:hover {
+    background-color: var(--brand-second-color);
+    width: 33.3%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slogan {
+    width: 47.83%;
+    left: 138px;
+  }
+
+  /* Susana */
+
+  .footerbox {
+    max-width: 1200px;
+    max-height: 170px;
+    justify-content: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  ul.footer {
+    position: relative;
+    left: 500px;
+    top: -1px;
+    line-height: 2.14;
+  }
+
+  .logo {
+    position: relative;
+    left: -790px;
+    top: 40px;
+  }
 }
