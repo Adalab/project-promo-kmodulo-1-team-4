@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 
   /*border: solid 3px red;*/
@@ -13,7 +14,7 @@
   --text-main-color: #54585a;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
@@ -22,8 +23,8 @@
     url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap)
       rel= "stylesheet" >;
   /* url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
-      format("woff2"); */
-}
+      format("woff2"); 
+} */
 
 /* header */
 
@@ -78,7 +79,6 @@
 .ul-menu {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   list-style: none;
   width: 100%;
 }
@@ -90,6 +90,7 @@
   line-height: 2;
   padding: 8px 0px 7px 0px;
   text-align: center;
+  width: 33.3%;
 }
 
 .link {
@@ -98,7 +99,7 @@
   color: var(--text-header-color);
   font-size: 15px;
   font-weight: 500;
-  /* line-height: 2px; */
+  line-height: 2px;
 }
 
 /* slogan */
@@ -155,8 +156,9 @@
 }
 
 .article-two {
-  background: #b8b8b9;
+  background: rgba(184, 184, 185, 0.2);
 }
+
 .group-atributes {
   font-family: "Open Sans";
   color: var(--brand-first-color);
@@ -170,7 +172,7 @@
 .about-us,
 .description {
   text-align: center;
-  margin: 0px 10px 0px 10px;
+  margin: 15px 10px 15px 10px;
 }
 .name,
 .description {
@@ -212,18 +214,12 @@
 .contact-me {
   width: 100%;
   display: inline-flex;
-  /* flex-direction: row; */
   justify-content: center;
   line-height: 1;
   list-style: none;
   text-align: center;
 }
 
-/* poner class 
-li {
-  list-style: none;
-  text-align: center;
-}*/
 .dot::after {
   font-size: 16px;
   content: "∙";
@@ -234,7 +230,7 @@ li {
 .footerbox {
   /* border: solid; */
 
-  justify-content: flex;
+  /* justify-content: flex; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -258,19 +254,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.item1 {
-  /* border: solid purple; */
-  box-sizing: border-box;
-}
-
-.item2 {
-  /* border: solid purple; */
-  box-sizing: border-box;
-}
-
-.item3 {
-  box-sizing: border-box;
-}
 
 .logo-copyname {
   display: flex;
@@ -293,28 +276,4 @@ a {
 
 img {
   width: 100px;
-}
-
-@media all and (min-width: 768px) {
-  .group-atributes-strenghts,
-  .group-atributes-weaks {
-    padding: 0 20px 10px 20px;
-    width: 49%;
-  }
-  .article-two {
-    display: flex;
-    /* flex-grow: space-between; */
-  }
-  .article-two::before {
-    left: 50%;
-    /* transform: translate(0px, 0px); */
-  }
-  .article-one {
-    max-width: 678px;
-  }
-  .team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
