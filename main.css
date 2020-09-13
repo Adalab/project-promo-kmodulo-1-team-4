@@ -193,6 +193,8 @@
   margin: 10px auto;
   display: block;
   border-radius: 4px;
+  width: 56%;
+  height: auto;
 }
 /* /iconos de redes sociales */
 
@@ -269,6 +271,7 @@ a {
   width: 100px;
 }
 
+/* MEDIAQUERIES*/
 @media all and (min-width: 768px) {
   /* header */
   .header {
@@ -324,34 +327,42 @@ a {
 
   /* Itziar */
 
-  .group-atributes-strenghts,
-  .group-atributes-weaks {
-    padding: 0 20px 10px 20px;
-    width: 49%;
-  }
-  .article-two {
-    display: flex;
-    /* flex-grow: space-between; */
-  }
-  .article-two::before {
-    left: 50%;
-    /* transform: translate(0px, 0px); */
-  }
-  .article-one {
-    max-width: 678px;
-  }
-  .team-container {
+  .media-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .article-one {
+    max-width: 678px;
+    margin: 15px 45px 0px 45px;
+  }
+
+  .media-atrib {
+    width: 50%;
+    margin-top: 45px;
+  }
+  .media-atrib p {
+    padding: 5px;
+  }
+  .article-two {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 40px 10px 40px;
+  }
+
+  .article-two::before {
+    left: 50%;
+    transform: translate(-25px, -20px);
+    position: absolute;
   }
 
   /* QUIÉNES SOMOS - Marina */
   .resp-about {
     display: flex;
   }
-  .resp-about: {
-    background-color: blue;
+  .resp-about:nth-child(2n) {
     display: flex;
     flex-direction: row-reverse;
     justify-self: right;
@@ -375,10 +386,11 @@ a {
     text-align: right;
   }
   .responsive-r .contact-me {
-    justify-content: right;
+    justify-content: flex-end;
   }
   .photo {
-    width: 205px;
+    width: 100%;
+    height: 100%;
     justify-content: left;
     margin-left: 44px;
     margin-right: 44px;
