@@ -181,6 +181,7 @@
   font-weight: 800;
   line-height: 1.88;
   color: var(--brand-first-color);
+  padding-top: 15px;
 }
 
 .description {
@@ -224,7 +225,10 @@
 .logo {
   width: 115.9px;
   height: 45px;
-  transform: translate(54px, 105px);
+  position: absolute;
+  top: 160px;
+
+  /* transform: translate(30px, 105px); */
 
   /* margin: 32px 101px 45px 102px;
   box-sizing: border-box;
@@ -262,8 +266,8 @@
 
 .footer-menu {
   position: absolute;
-  top: 75px;
-  left: 59px;
+  top: 70px;
+  left: 33.3%;
   
 }
  
