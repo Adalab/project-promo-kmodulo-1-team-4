@@ -560,30 +560,73 @@ a {
       left: 138px;
     }
 
+    /* Equipo */
+
+    .article-two {
+      padding: 0px 138px 60px 138px;
+    }
+
+    /* QUIENES SOMOS */
+
+    .about-us {
+      padding-top: 30px;
+    }
+
+    .photo {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    .resp-about {
+      padding: 0px 138px 60px 138px;
+    }
+
+    .name,
+    .description {
+      margin: 15px 0px 15px 0px;
+    }
+
+    .responsive-l {
+      margin: 0 160px 0 45px;
+    }
+
+    .responsive-r {
+      margin: 0 45px 0 160px;
+    }
+
     /* Susana */
 
     .footerbox {
-      max-width: 1200px;
       max-height: 170px;
       justify-content: flex;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
+      /* align-items: center; */
       flex-wrap: wrap;
+      padding: 0px 138px;
     }
 
     ul.footer {
-      position: relative;
+      /* position: relative;
       left: 500px;
-      top: -1px;
+      top: -1px; */
       line-height: 2.14;
+      margin-right: 0;
     }
 
-    .logo {
+    .copy-logo-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    /* .logo {
       position: relative;
       left: -790px;
       top: 40px;
-    }
+    } */
   }
 }
