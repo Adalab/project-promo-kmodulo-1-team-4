@@ -238,17 +238,16 @@
 .logo img {
   width: 115.9px;
   height: 45px;
-}  
+}
 
- .footerbox {
+.footerbox {
   border-top: 1px solid #b8b8b9;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 250px;
-  
-} 
+}
 .copy-name {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -256,26 +255,24 @@
   margin-top: 30px;
   text-align: center;
 }
-.copy-logo-box{
+.copy-logo-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .footer-menu {
   position: absolute;
   top: 70px;
-  left: 33.3%;
-  
+  left: 103px;
 }
- 
+
 .footer {
   list-style: none;
   font-size: 14px;
   margin-top: 10px;
-  margin-right: 45px; 
+  margin-right: 45px;
   font-family: "Open Sans", sans-serif;
   font-style: bold;
   color: var(--text-main-color);
@@ -286,7 +283,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 
 /* MEDIAQUERIES*/
 @media all and (min-width: 768px) {
@@ -456,41 +452,38 @@ a {
   } */
 
   /* FOOTER */
-    .footerbox {
-      border-top: solid 1px #b8b8b9;
-      max-width: 100%;
-      max-height: 170px;
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 45px;
-   
-    }
+  .footerbox {
+    border-top: solid 1px #b8b8b9;
+    max-width: 100%;
+    max-height: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 45px;
+    margin-top: 63px;
+  }
 
-    .footer-menu{
-      position: relative;
-      top:0;
-      left:0;
-    }
-    .footer{
-      text-align: right;
-      line-height: 2.14;
-      padding: 24px 0px 56px 0px;
-    }
+  .footer-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .footer {
+    text-align: right;
+    line-height: 2.14;
+    padding: 24px 0px 56px 0px;
+  }
 
-    .copy-logo-box{
-      height: 90px;
-      justify-content: space-around;
-      margin-top: 30px;
+  .copy-logo-box {
+    height: 90px;
+  }
 
-      
-     
-    }
-   
-    .logo{
-      padding: 15px 0px 60px 0px;
-      transform: translate(0px,0px);
-    }
-/*
+  .logo {
+    padding: 15px 0px 60px 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  /*
     .copy-name {
       width: 100%;
       display: flex;
@@ -533,63 +526,64 @@ a {
   }
 } */
 
-/* version DESKTOP */
+  /* version DESKTOP */
 
-@media all and (min-width: 1200px) {
-  /* Parte Lissandra */
-  .container-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 60px;
-    opacity: 0.95;
-    padding: 0 138px 0 142px;
-    background-color: var(--brand-first-color);
-  }
+  @media all and (min-width: 1200px) {
+    /* Parte Lissandra */
+    .container-menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 60px;
+      opacity: 0.95;
+      padding: 0 138px 0 142px;
+      background-color: var(--brand-first-color);
+    }
 
-  /* Teresa */
+    /* Teresa */
 
-  .list {
-    width: 33.3%;
-  }
+    .list {
+      width: 33.3%;
+    }
 
-  .list:hover {
-    background-color: var(--brand-second-color);
-    width: 33.3%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .list:hover {
+      background-color: var(--brand-second-color);
+      width: 33.3%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .slogan {
-    width: 47.83%;
-    left: 138px;
-  }
+    .slogan {
+      width: 47.83%;
+      left: 138px;
+    }
 
-  /* Susana */
+    /* Susana */
 
-  .footerbox {
-    max-width: 1200px;
-    max-height: 170px;
-    justify-content: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+    .footerbox {
+      max-width: 1200px;
+      max-height: 170px;
+      justify-content: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-  ul.footer {
-    position: relative;
-    left: 500px;
-    top: -1px;
-    line-height: 2.14;
-  }
+    ul.footer {
+      position: relative;
+      left: 500px;
+      top: -1px;
+      line-height: 2.14;
+    }
 
-  .logo {
-    position: relative;
-    left: -790px;
-    top: 40px;
+    .logo {
+      position: relative;
+      left: -790px;
+      top: 40px;
+    }
   }
 }
