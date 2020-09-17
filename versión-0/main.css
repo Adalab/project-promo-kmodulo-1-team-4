@@ -442,7 +442,6 @@ a {
   }  */
 
   /* cambios por Teresa 
-
   .copy-logo {
     display: flex;
     flex-direction: column;
@@ -455,7 +454,6 @@ a {
     top: -1px;
     line-height: 2.14;
   }
-
   .logo {
     position: relative;
     left: -500px;
@@ -502,17 +500,14 @@ a {
       flex-wrap: nowrap;
       margin-left: 45px;
     }
-
     ul.footer {
       position: relative;
       left: 350px;
       top: -1px;
       line-height: 2.14;
     }
-
     
   }
-
   .footer-menu {
     position: relative;
     display: flex;
@@ -522,14 +517,11 @@ a {
     align-items: center;
     width: 100%;
   }
-
   .logo {
     width: 100%;
     margin: 65px 607px 60px 45px;
-
     position: absolute;
   }
-
   .logo img {
     position: relative;
     left: 300px;
