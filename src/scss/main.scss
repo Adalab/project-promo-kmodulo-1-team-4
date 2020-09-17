@@ -116,7 +116,6 @@
 
   .responsive-r {
     margin: 0 0px 0 30px;
-    justify-content: flex-start;
   }
 
   .responsive-l .name,
@@ -241,6 +240,8 @@
   }
 
   .resp-about {
+    display: flex;
+    justify-content: flex-start;
     padding: 0px 138px 60px 138px;
   }
 
