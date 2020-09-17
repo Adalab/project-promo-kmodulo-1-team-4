@@ -221,32 +221,50 @@
 }
 
 /* Código Susana */
-
-.logo {
-  width: 115.9px;
-  height: 45px;
-  /* position: absolute;
-  top: 160px; */
-
-  /* transform: translate(30px, 105px); */
-
-  /* margin: 32px 101px 45px 102px;
-  box-sizing: border-box;
-  order: 2; */
-}
-
-.logo img {
-  width: 115.9px;
-  height: 45px;
-}
-
 .footerbox {
-  border-top: 1px solid #b8b8b9;
-  /* position: relative;
-  top: 0;
-  left: 0; */
-  width: 100%;
-  height: 250px;
+  /* border: solid; */
+  box-sizing: border-box;
+  justify-content: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  box-sizing: border-box;
+  font-size: 14px;
+  /* margin-right: 45px; */
+  font-family: "Open Sans", sans-serif;
+  font-style: bold;
+  color: var(--text-main-color);
+}
+.copy-logo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: center;
+  position: relative;
+}
+
+.footer-menu {
+  float: center;
+}
+
+.footer {
+  list-style: none;
+  text-align: center;
+  float: center;
+}
+
+.list-item: {
+  float: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .copy-name {
@@ -254,23 +272,23 @@
   font-size: 14px;
   color: #b8b8b9;
   margin-top: 30px;
+  /* width: 172px;
+  margin-left: 74px;
+  margin-right: 74px;
+ */
   text-align: center;
+  /* border: solid blue; */
+  box-sizing: border-box;
 }
 
-.footer {
-  list-style: none;
-  font-size: 14px;
-  margin-top: 10px;
-  margin-right: 45px;
-  font-family: "Open Sans", sans-serif;
-  font-style: bold;
-  color: var(--text-main-color);
-  text-align: center;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+.logo {
+  margin: 32px 101px 45px 102px;
+  box-sizing: border-box;
+  /* margin-bottom: 45px;
+  margin-left: 102px;
+  margin-right: 101px;
+  border: solid yellow; */
+  width: 100px;
 }
 
 /* MEDIAQUERIES*/
