@@ -1,0 +1,269 @@
+@import "core/reset";
+@import "core/variables";
+@import "layout/header";
+@import "layout/team";
+@import "layout/about-us";
+@import "layout/footer";
+
+/* header */
+
+/* EQUIPO - fortalezas y debilidades */
+
+/* Código Lissandra-footer*/
+
+@media all and (min-width: 768px) {
+  /* header */
+  .header {
+    align-items: flex-start;
+  }
+
+  /* Lissandra */
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    opacity: 0.95;
+    padding: 0 45px;
+    background-color: var(--brand-first-color);
+  }
+
+  .group-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .name-ada {
+    margin: 0;
+    padding: 0;
+  }
+  .group-name,
+  .menu {
+    background-color: var(--brand-first-color);
+    opacity: 0.95;
+    height: 60px;
+  }
+  .ul-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  .list {
+    padding: 0;
+    margin: 16px 0px 14px 19px;
+  }
+
+  /* Teresa */
+  .slogan {
+    width: 57.42%;
+    top: 0px;
+    left: 46px;
+    background-color: rgba(256, 256, 256, 0.8);
+    justify-content: right;
+    padding: 30px;
+  }
+
+  /* Itziar */
+
+  .media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-one {
+    max-width: 678px;
+    margin: 15px 45px 0px 45px;
+  }
+
+  .media-atrib {
+    width: 50%;
+    margin-top: 45px;
+  }
+  .media-atrib p {
+    padding: 5px;
+  }
+  .article-two {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 40px 10px 40px;
+  }
+
+  .article-two::before {
+    left: 50%;
+    transform: translate(-25px, -20px);
+    position: absolute;
+  }
+
+  /* QUIÉNES SOMOS - Marina */
+  .resp-about {
+    display: flex;
+  }
+  .resp-about:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: right;
+  }
+
+  .responsive-l {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 30px 0 0px;
+  }
+
+  .responsive-r {
+    margin: 0 0px 0 30px;
+  }
+
+  .responsive-l .name,
+  .responsive-l .description {
+    text-align: left;
+  }
+  .responsive-l .contact-me {
+    justify-content: left;
+  }
+
+  .responsive-r .name,
+  .responsive-r .description {
+    text-align: right;
+  }
+  .responsive-r .contact-me {
+    justify-content: flex-end;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    margin-left: 44px;
+    margin-right: 44px;
+  }
+
+  .name,
+  .description {
+    margin: 15px 0px 15px 0px;
+  }
+  /* footer -media-q */
+  .logo-menu-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer {
+    line-height: 2.14;
+    text-align: right;
+  }
+  .footer-menu {
+    order: 1;
+  }
+  .logo-menu-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 24px 45px 60px 45px;
+  }
+  .copy-name {
+    padding: 0;
+    position: relative;
+    top: 0;
+  }
+  .copy-box {
+    width: 100%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .logo {
+    padding: 0;
+  }
+  .small {
+    position: absolute;
+    top: 1.875rem;
+    left: 2.813rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .header {
+    background-image: url(../images/hero-desktop.png);
+    background-position: right;
+  }
+
+  /* Parte Lissandra */
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    opacity: 0.95;
+    padding: 0 138px 0 142px;
+    background-color: var(--brand-first-color);
+  }
+
+  /* Teresa */
+
+  .list {
+    width: 33.3%;
+  }
+
+  .list:hover {
+    background-color: var(--brand-second-color);
+    width: 33.3%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slogan {
+    width: 47.83%;
+    left: 138px;
+  }
+
+  /* Equipo */
+
+  .article-two {
+    padding: 0px 138px 60px 138px;
+  }
+
+  /* QUIENES SOMOS */
+
+  .about-us {
+    padding-top: 30px;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .resp-about {
+    padding: 0px 138px 60px 138px;
+  }
+
+  .name,
+  .description {
+    margin: 15px 0px 15px 0px;
+  }
+
+  .responsive-l {
+    margin: 0 160px 0 45px;
+  }
+
+  .responsive-r {
+    margin: 0 45px 0 160px;
+  }
+
+  /* FOOTER */
+  .logo-menu-box {
+    padding: 24px 138px 60px 138px;
+  }
+
+  .small {
+    position: absolute;
+    top: 1.875rem;
+    left: 8.625rem;
+  }
+}

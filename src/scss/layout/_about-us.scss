@@ -1,0 +1,64 @@
+/*Textos*/
+.name,
+.about-us,
+.description {
+  text-align: center;
+  margin: 15px 10px 15px 10px;
+}
+
+.description {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 1.5;
+}
+.name {
+  font-family: "Open Sans";
+  font-size: 20px;
+  /* padding: 10px 0px 10px 0px; */
+  line-height: 2.25;
+}
+
+.about-us {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.88;
+  color: var(--brand-first-color);
+  padding-top: 15px;
+}
+
+.description {
+  color: var(--text-main-color);
+}
+
+/*Fotografías integrantes*/
+.photo {
+  border: 5px solid rgba(0, 0, 0, 0.08);
+  margin: 10px auto;
+  display: block;
+  border-radius: 4px;
+  width: 56%;
+  height: auto;
+}
+/* /iconos de redes sociales */
+
+.icon {
+  color: var(--brand-first-color);
+  padding-left: 5px;
+}
+
+.contact-me {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.dot::after {
+  font-size: 16px;
+  content: "∙";
+  color: var(--text-main-color);
+}
