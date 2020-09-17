@@ -12,11 +12,6 @@
 /* Código Lissandra-footer*/
 
 @media all and (min-width: 768px) {
-  /* header */
-  .header {
-    align-items: flex-start;
-  }
-
   /* Lissandra */
   .container-menu {
     display: flex;
@@ -55,14 +50,6 @@
   }
 
   /* Teresa */
-  .slogan {
-    width: 57.42%;
-    top: 0px;
-    left: 46px;
-    background-color: rgba(256, 256, 256, 0.8);
-    justify-content: right;
-    padding: 30px;
-  }
 
   /* Itziar */
 
@@ -185,11 +172,6 @@
   }
 }
 @media all and (min-width: 1200px) {
-  .header {
-    background-image: url(../images/hero-desktop.png);
-    background-position: right;
-  }
-
   /* Parte Lissandra */
   .container-menu {
     display: flex;
@@ -202,24 +184,6 @@
   }
 
   /* Teresa */
-
-  .list {
-    width: 33.3%;
-  }
-
-  .list:hover {
-    background-color: var(--brand-second-color);
-    width: 33.3%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .slogan {
-    width: 47.83%;
-    left: 138px;
-  }
 
   /* Equipo */
 
