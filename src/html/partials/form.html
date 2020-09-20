@@ -2,9 +2,9 @@
   <h1 class="main__h1">Contacto</h1>
   <div class="main__p">
     <p class="p">
-      Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Qui neque quidem nisi iure
-      dolore quis quia quam
+      ¿Quieres saber más sobre nuestros proyectos?
+      Déjanos tu contacto y pronto recibiras una
+      respuesta del equipo.
     </p>
 
     <small class="main__p__small"
@@ -35,33 +35,38 @@
       required
     />
 
-    <fieldset class="form__fieldset">
-      <label class="label" for="email"
-        >Email
-        <span class="main__required">
-          *</span
-        ></label
-      >
-      <input
-        class="form__fielset__email"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="nombre.apellidos@mail.com"
-        required
-      />
-
-      <label class="label" for="telephone"
-        >Teléfono</label
-      >
-      <input
-        class="form__fielset--telephone"
-        type="tel"
-        id="telephone"
-        name="telephone"
-        placeholder="Ej. 123456789"
-      />
-    </fieldset>
+    <!-- <fieldset class="form__fieldset"> -->
+    <div class="row">
+      <div class="column left">
+        <label class="label" for="email"
+          >Email
+          <span class="main__required">
+            *</span
+          ></label
+        >
+        <input
+          class="form__fielset__email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="nombre.apellidos@mail.com"
+          required
+        />
+      </div>
+      <div class="column right">
+        <label class="label" for="telephone"
+          >Teléfono</label
+        >
+        <input
+          class="form__fielset--telephone"
+          type="tel"
+          id="telephone"
+          name="telephone"
+          placeholder="Ej. 123456789"
+        />
+      </div>
+    </div>
+    <!-- </fieldset> -->
 
     <label class="label" for="comments"
       >Mensaje<span class="main__required">
