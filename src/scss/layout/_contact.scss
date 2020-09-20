@@ -1,6 +1,4 @@
-* {
-    
-}
+
 
 
 .main {
@@ -50,6 +48,12 @@
         margin-top: 58px;
         font-size: 14px;
 
+        & .form__label {
+            padding:13px 0 7px 0;
+            color: $textMainColor;
+            font-size: 14px;
+        }
+
     
          & .form__type {
             width:290px;
@@ -60,14 +64,11 @@
         & [placeholder] {
             padding: 11px 0 15px 15px;
             color: $textMainColor;
+            font-size:14px;
+            color: #b8b8b9;
             
         }
-         
-        & .form__label {
-            padding:13px 0 7px 0;
-            color: $textMainColor;
-        }
-
+        
         }
         & .form__fieldset {
             display: flex;
@@ -80,6 +81,7 @@
                width:290px;
                height:105px;
                padding:13px 0 7px 15px;
+               font-size: 14px;
            }
 
             & .form__submit {
@@ -90,6 +92,7 @@
                 color:white;
                 border-radius: 4px;
                 text-transform: uppercase;
+                border: none;
 
             } 
    
