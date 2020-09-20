@@ -45,7 +45,7 @@
     &__form {
         display:flex;
         flex-direction: column;
-        margin-top: 58px;
+        margin: 58px 15px 60px 15px;
         font-size: 14px;
 
         & .form__label {
@@ -59,21 +59,23 @@
             width:290px;
             height:45px;
             padding:7px 15px 13px 15px;
-        }
+        
 
         & [placeholder] {
             padding: 11px 0 15px 15px;
-            color: $textMainColor;
             font-size:14px;
             color: #b8b8b9;
             
         }
-        
+    
+
+    }
         }
         & .form__fieldset {
             display: flex;
             flex-direction: column;
             border:0;
+
             
             } 
 
@@ -96,25 +98,9 @@
 
             } 
    
-    }
+    
 
     .p {
         margin-bottom: 25px;
     }
-
-
-    
-
-  
-
-  
-
-
-
-
-   
-
-
-
-
-
+}
