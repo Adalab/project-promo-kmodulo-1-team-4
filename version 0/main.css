@@ -222,6 +222,8 @@
 
 /* Código Lissandra-footer*/
 
+<<<<<<< HEAD:main.css
+=======
 .logo {
   box-sizing: content-box;
   width: 115.9px;
@@ -233,11 +235,23 @@
   height: 45px;
 }
 
+>>>>>>> master:version 0/main.css
 .footerbox {
   border-top: 1px solid #b8b8b9;
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD:main.css
+  padding: 30px 74px 45px 74px;
+}
+
+.logo img {
+  width: 115.9px;
+  height: 45px;
+}
+.footer-menu {
+  margin: 30px 0;
+=======
 }
 .copy-name {
   font-family: "Open Sans", sans-serif;
@@ -254,9 +268,10 @@
   color: var(--text-main-color);
   text-align: center;
   line-height: 1.43;
+>>>>>>> master:version 0/main.css
 }
 
-a {
+.footer a {
   color: inherit;
   text-decoration: none;
 }
@@ -439,6 +454,37 @@ a {
     background-position: right;
   }
 
+<<<<<<< HEAD:main.css
+  /* FOOTER */
+  .footerbox {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 45px;
+    position: relative;
+  }
+
+  .footer-menu {
+    text-align: right;
+    margin: 0;
+  }
+  .copy-logo-box {
+    height: 62px; /*como el menu*/
+    text-align: start;
+  }
+  .logo {
+    /* display: none; */
+    position: absolute;
+    top: 65px;
+    left: 45px;
+  }
+  /* version DESKTOP */
+}
+@media all and (min-width: 1200px) {
+  .header {
+    background-image: url(./img/hero-desktop.png);
+    background-position: right;
+  }
+
   /* Parte Lissandra */
   .container-menu {
     display: flex;
@@ -497,6 +543,66 @@ a {
     margin: 15px 0px 15px 0px;
   }
 
+=======
+  /* Parte Lissandra */
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    opacity: 0.95;
+    padding: 0 138px 0 142px;
+    background-color: var(--brand-first-color);
+  }
+
+  /* Teresa */
+
+  .list {
+    width: 33.3%;
+  }
+
+  .list:hover {
+    background-color: var(--brand-second-color);
+    width: 33.3%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slogan {
+    width: 47.83%;
+    left: 138px;
+  }
+
+  /* Equipo */
+
+  .article-two {
+    padding: 0px 138px 60px 138px;
+  }
+
+  /* QUIENES SOMOS */
+
+  .about-us {
+    padding-top: 30px;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .resp-about {
+    padding: 0px 138px 60px 138px;
+  }
+
+  .name,
+  .description {
+    margin: 15px 0px 15px 0px;
+  }
+
+>>>>>>> master:version 0/main.css
   .responsive-l {
     margin: 0 160px 0 45px;
   }
@@ -505,6 +611,15 @@ a {
     margin: 0 45px 0 160px;
   }
 
+<<<<<<< HEAD:main.css
+  /* Susana */
+  .logo {
+    top: 65px;
+    left: 138px;
+  }
+  .footerbox {
+    padding: 30px 138px;
+=======
   /* FOOTER */
   .logo-menu-box {
     padding: 24px 138px 60px 138px;
@@ -514,5 +629,6 @@ a {
     position: absolute;
     top: 1.875rem;
     left: 8.625rem;
+>>>>>>> master:version 0/main.css
   }
 }

@@ -1,14 +1,57 @@
 <main class="main">
+  <h1 class="main__h1">Contacto</h1>
+  <div class="main__p">
+    <p class="p">
+      Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Qui neque quidem nisi iure
+      dolore quis quia quam
+    </p>
 
-<h1 class="main__h1">Contacto</h1>
-<div class="main__p">
-<p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui neque quidem nisi iure dolore quis quia quam </p>
+    <small class="main__p__small"
+      >Todos los campos marcados con
+      <span class="main__required">*</span> son
+      obligatorios</small
+    >
+  </div>
 
-<small class="main__p__small">Todos los campos marcados con <span class="main__required">*</span> son obligatorios</small>
-</div>
+  <form
+    class="main__form"
+    action="/signup"
+    method="post"
+  >
+    <label class="label" for="name"
+      >Nombre Completo<span
+        class="main__required"
+      >
+        *</span
+      ></label
+    >
+    <input
+      class="form__fielset__name"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Nombre..."
+      required
+    />
 
-<form class="main__form" action="/signup" method="post">
+    <fieldset class="form__fieldset">
+      <label class="label" for="email"
+        >Email
+        <span class="main__required">
+          *</span
+        ></label
+      >
+      <input
+        class="form__fielset__email"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="nombre.apellidos@mail.com"
+        required
+      />
 
+<<<<<<< HEAD
  
 <label class="form__label" for="name">Nombre Completo <span class="main__required">*</span></label>
 <input class="form__type"type="text" id="name" name="name" placeholder="Nombre..." required/>
@@ -31,3 +74,38 @@
 
 </form>
 </main>
+=======
+      <label class="label" for="telephone"
+        >Teléfono</label
+      >
+      <input
+        class="form__fielset--telephone"
+        type="tel"
+        id="telephone"
+        name="telephone"
+        placeholder="Ej. 123456789"
+      />
+    </fieldset>
+
+    <label class="label" for="comments"
+      >Mensaje<span class="main__required">
+        *</span
+      ></label
+    >
+    <textarea
+      class="textarea"
+      id="comments"
+      name="comments"
+      row="8"
+      cols="45"
+      placeholder="¿Qué necesitas?"
+      required
+    ></textarea>
+    <input
+      class="form__submit"
+      type="submit"
+      value="Enviar"
+    />
+  </form>
+</main>
+>>>>>>> master

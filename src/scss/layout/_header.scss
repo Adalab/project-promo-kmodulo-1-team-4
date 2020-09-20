@@ -1,5 +1,18 @@
-.header {
-  background-image: url(../images/hero-mobile.jpg);
+// .header {
+//   background-image: url(../images/hero-mobile.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   height: 421px;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+@mixin mixinHeader($backgroundUrl) {
+  background-image: url($backgroundUrl);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,6 +24,40 @@
   justify-content: space-between;
 }
 
+.header {
+  @include mixinHeader("../images/hero-mobile.jpg");
+}
+
+.contact__header {
+  @include mixinHeader("../images/logo-adalab.png");
+}
+
+@mixin mixin_slogan($visib) {
+  visibility: $visib;
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  background-color: white;
+  width: 90.625%;
+  height: 80px;
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+.hidden {
+  @include mixin_slogan(hidden);
+}
+.no_hidden {
+  @include mixin_slogan(visible);
+}
+
 /* Código Lissandra */
 
 /* menu del grupo */
@@ -20,7 +67,7 @@
   justify-content: center;
   height: 45px;
   opacity: 0.9;
-  background-color: var(--brand-second-color);
+  background-color: $secondColor;
 }
 
 .container-menu {
@@ -32,12 +79,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--brand-first-color);
+  background-color: $firstColor;
   opacity: 0.95;
   height: 60px;
 }
 .name-ada {
-  color: var(--text-header-color);
+  color: textHeaderColor;
   font-family: "Rubik", sans-serif;
   height: 30px;
   font-size: 16px;
@@ -65,7 +112,7 @@
 .link {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
-  color: var(--text-header-color);
+  color: $textHeaderColor;
   font-size: 15px;
   font-weight: 500;
   line-height: 2px;
@@ -73,21 +120,21 @@
 
 /* slogan */
 
-.slogan {
-  color: black;
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 18px;
-  background-color: white;
-  width: 90.625%;
-  height: 80px;
-  box-sizing: border-box;
-  margin: 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 40px;
-}
+// .slogan {
+//   color: black;
+//   font-family: "Open Sans";
+//   font-weight: 600;
+//   font-size: 18px;
+//   background-color: white;
+//   width: 90.625%;
+//   height: 80px;
+//   box-sizing: border-box;
+//   margin: 0px;
+//   text-align: center;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   top: 40px;
+// }
