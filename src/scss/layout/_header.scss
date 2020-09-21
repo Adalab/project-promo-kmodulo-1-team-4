@@ -29,7 +29,7 @@
 }
 
 .contact__header {
-  @include mixinHeader("../images/logo-adalab.png");
+  @include mixinHeader("../images/contact-mobile.jpg");
 }
 
 @mixin mixin_slogan($visib) {

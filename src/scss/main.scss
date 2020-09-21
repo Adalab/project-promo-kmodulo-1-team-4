@@ -26,7 +26,7 @@
     height: 60px;
     opacity: 0.95;
     padding: 0 45px;
-    background-color: var(--brand-first-color);
+    background-color: $firstColor;
   }
 
   .group-name {
@@ -40,7 +40,7 @@
   }
   .group-name,
   .menu {
-    background-color: var(--brand-first-color);
+    background-color: $firstColor;
     opacity: 0.95;
     height: 60px;
   }
@@ -199,7 +199,7 @@
     height: 60px;
     opacity: 0.95;
     padding: 0 138px 0 142px;
-    background-color: var(--brand-first-color);
+    background-color: $firstColor;
   }
 
   /* Teresa */
@@ -209,7 +209,7 @@
   }
 
   .list:hover {
-    background-color: var(--brand-second-color);
+    background-color: $secondColor;
     width: 33.3%;
     height: 60px;
     display: flex;
