@@ -23,12 +23,12 @@
   font-size: 24px;
   font-weight: 800;
   line-height: 1.88;
-  color: var(--brand-first-color);
+  color: $firstColor;
   padding-top: 15px;
 }
 
 .description {
-  color: var(--text-main-color);
+  color: $textMainColor;
 }
 
 /*Fotografías integrantes*/
@@ -43,7 +43,7 @@
 /* /iconos de redes sociales */
 
 .icon {
-  color: var(--brand-first-color);
+  color: $firstColor;
   padding-left: 5px;
 }
 
@@ -60,5 +60,5 @@
 .dot::after {
   font-size: 16px;
   content: "∙";
-  color: var(--text-main-color);
+  color: $textMainColor;
 }
