@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <script
+      src="https://kit.fontawesome.com/14e9fe2bba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+</head>
+
+<body>
+    <header class="contact__header">
+      <div class="container-menu">
+        <div class="group-name">
+          <h1 class="name-ada">ADAWARRIORS</h1>
+        </div>
+        <nav class="menu">
+          <ul class="ul-menu">
+            <li class="list nav-team">
+              <a
+                href="../index.html#team"
+                class="link"
+                >EQUIPO</a
+              >
+            </li>
+            <li class="list nav-about-us">
+              <a
+                href="../index.html#about-us"
+                class="link"
+                >QUIÉNES SOMOS</a
+              >
+            </li>
+            <li class="list nav-contact">
+              <a href="../contact.html" class="link"
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <h2 class="slogan hidden">
+        Love what you code
+      </h2>
+    </header>
+
+
+    <main class="main">
+      <h1 class="main__h1">Contacto</h1>
+      <div class="main__p">
+        <p class="p">
+          ¿Quieres saber más sobre nuestros proyectos?
+          Déjanos tu contacto y pronto recibiras una
+          respuesta del equipo.
+        </p>
+
+        <small class="main__p__small"
+          >Todos los campos marcados con
+          <span class="main__required">*</span> son
+          obligatorios</small
+        >
+      </div>
+
+      <form
+        class="main__form"
+        action="/signup"
+        method="post"
+      >
+        <label class="label" for="name"
+          >Nombre Completo<span
+            class="main__required"
+          >
+            *</span
+          ></label
+        >
+        <input
+          class="form__fielset__name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nombre..."
+          required
+        />
+
+        <!-- <fieldset class="form__fieldset"> -->
+        <div class="row">
+          <div class="column left">
+            <label class="label" for="email"
+              >Email
+              <span class="main__required">
+                *</span
+              ></label
+            >
+            <input
+              class="form__fielset__email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nombre.apellidos@mail.com"
+              required
+            />
+          </div>
+          <div class="column right">
+            <label class="label" for="telephone"
+              >Teléfono</label
+            >
+            <input
+              class="form__fielset--telephone"
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="Ej. 123456789"
+            />
+          </div>
+        </div>
+        <!-- </fieldset> -->
+
+        <label class="label" for="comments"
+          >Mensaje<span class="main__required">
+            *</span
+          ></label
+        >
+        <textarea
+          class="textarea"
+          id="comments"
+          name="comments"
+          row="8"
+          cols="45"
+          placeholder="¿Qué necesitas?"
+          required
+        ></textarea>
+        <input
+          class="form__submit"
+          type="submit"
+          value="Enviar"
+        />
+      </form>
+    </main>
+
+
+    <footer class="footerbox">
+      <div class="copy-box">
+        <div class="copy-name">
+          <small class="small"
+            >Adawarriors &#169;2020</small
+          >
+        </div>
+      </div>
+      <div class="logo-menu-box">
+        <nav class="footer-menu">
+          <ul class="footer">
+            <li class="item1">
+              <a href="../index.html#team">EQUIPO</a>
+            </li>
+            <li class="item2">
+              <a href="../index.html#about-us"
+                >QUIÉNES SOMOS</a
+              >
+            </li>
+            <li class="item3">
+              <a href="../contact.html">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img
+            src="./assets/images/logo-adalab.jpg.jpg"
+            alt="logo-adalab"
+          />
+        </div>
+      </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
