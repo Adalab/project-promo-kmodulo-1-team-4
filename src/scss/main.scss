@@ -54,17 +54,6 @@
     padding: 0;
     margin: 16px 0px 14px 19px;
   }
-
-  /* Teresa */
-  .slogan {
-    width: 57.42%;
-    top: 0px;
-    left: 46px;
-    background-color: rgba(256, 256, 256, 0.8);
-    justify-content: right;
-    padding: 30px;
-  }
-
   /* Itziar */
 
   .media-container {
@@ -82,9 +71,7 @@
     width: 50%;
     margin-top: 45px;
   }
-  .media-atrib p {
-    padding: 5px;
-  }
+
   .article-two {
     display: flex;
     justify-content: space-between;
@@ -199,28 +186,10 @@
     height: 60px;
     opacity: 0.95;
     padding: 0 138px 0 142px;
-    background-color: var(--brand-first-color);
+    background-color: $firstColor;
   }
 
   /* Teresa */
-
-  .list {
-    width: 33.3%;
-  }
-
-  .list:hover {
-    background-color: var(--brand-second-color);
-    width: 33.3%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .slogan {
-    width: 47.83%;
-    left: 138px;
-  }
 
   /* Equipo */
 
