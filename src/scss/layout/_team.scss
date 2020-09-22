@@ -8,6 +8,12 @@
   border-left: 22px solid transparent;
   position: relative;
   top: 20px;
+
+  @media all and (min-width: 768px) {
+    left: 50%;
+    transform: translate(-25px, -20px);
+    position: absolute;
+  }
 }
 
 .article-one,
@@ -15,17 +21,33 @@
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
-  color: var(--text-main-color);
-  width: 100%; /*320px;*/ /* width: 100% cuando el responsive?*/
+  color: $firstColor;
+  width: 100%;
   height: auto;
   display: block;
   margin-top: 50px;
+
+  p {
+    text-align: center;
+    color: black;
+    margin: 15px 10px 15px 10px; /*HERENCIA??*/
+    font-family: "Open Sans"; /*BUSCAR LA HERENCIA" */
+    font-size: 16px;
+    line-height: 1.5;
+
+    @media all and (min-width: 768px) {
+      margin: 15px 0px 15px 0px;
+    }
+    @media all and (min-width: 1200px) {
+      max-width: 600px;
+    }
+  }
 }
 
 .team-description {
   font-family: "Rubik";
   font-weight: 500;
-  color: var(--brand-second-color);
+  color: $secondColor;
   text-align: center;
   margin: 30px 30px 15px 30px;
 }
@@ -37,7 +59,7 @@
 
 .group-atributes {
   font-family: "Open Sans";
-  color: var(--brand-first-color);
+  color: $firstColor;
   text-align: center;
   font-size: 22px;
   padding-top: 20px;

@@ -1,23 +1,14 @@
 .header {
   background-image: url(../images/hero-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 421px;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  //   height: 421px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
   justify-content: space-between;
-
-  @media all and (min-width: 768px) {
-    align-items: flex-start;
-  }
-
-  @media all and (min-width: 1200px) {
-    background-image: url(../images/hero-desktop.png);
-    background-position: right;
-  }
 }
 
 /* Código Lissandra */
@@ -29,7 +20,7 @@
   justify-content: center;
   height: 45px;
   opacity: 0.9;
-  background-color: var(--brand-second-color);
+  background-color: $secondColor;
 }
 
 .container-menu {
@@ -41,12 +32,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--brand-first-color);
+  background-color: $firstColor;
   opacity: 0.95;
   height: 60px;
 }
 .name-ada {
-  color: var(--text-header-color);
+  color: textHeaderColor;
   font-family: "Rubik", sans-serif;
   height: 30px;
   font-size: 16px;
@@ -73,23 +64,22 @@
   @media all and (min-width: 1200px) {
     width: 33.3%;
   }
-}
 
-.list:hover {
-  @media all and (min-width: 1200px) {
-    background-color: var(--brand-second-color);
-    width: 33.3%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &:hover {
+    @media all and (min-width: 1200px) {
+      width: 33.3%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
 .link {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
-  color: var(--text-header-color);
+  color: $textHeaderColor;
   font-size: 15px;
   font-weight: 500;
   line-height: 2px;
