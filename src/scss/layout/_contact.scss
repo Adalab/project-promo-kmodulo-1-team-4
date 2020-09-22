@@ -129,6 +129,12 @@
   color: white;
   text-transform: uppercase;
   border: none;
+  transition: background-color ease-in 1s;
+  
+  &:hover{
+background-color: $secondColor;
+
+  }
 }
 
 @media all and (min-width: 768px) {
