@@ -38,9 +38,6 @@
     @media all and (min-width: 768px) {
       margin: 15px 0px 15px 0px;
     }
-    @media all and (min-width: 1200px) {
-      max-width: 600px;
-    }
   }
 }
 
@@ -62,11 +59,4 @@
   color: $firstColor;
   text-align: center;
   font-size: 22px;
-}
-
-.descript-media-l {
-  padding-right: 15px;
-}
-.descript-media-r {
-  padding-left: 15px;
 }
