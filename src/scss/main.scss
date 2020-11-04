@@ -69,7 +69,7 @@
 
   .media-atrib {
     width: 50%;
-    margin-top: 45px;
+    margin: 45px 22.5px 60px 22.5px;
   }
 
   .article-two {
@@ -124,6 +124,7 @@
   .photo {
     width: 100%;
     height: 100%;
+    max-width: 278px;
     justify-content: left;
     margin-left: 44px;
     margin-right: 44px;
@@ -134,42 +135,37 @@
     margin: 15px 0px 15px 0px;
   }
   /* footer -media-q */
-  .logo-menu-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .footerbox {
+    grid-template-areas: "mycopy mymenu" "logo mymenu";
+    padding: 30px 45px 60px 45px;
+  }
+
+  .small {
+    grid-area: mycopy;
+  }
+  .copy-name {
+    padding: 0;
   }
   .footer {
     line-height: 2.14;
     text-align: right;
   }
   .footer-menu {
-    order: 1;
+    grid-area: mymenu;
+    justify-self: right;
   }
   .logo-menu-box {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     padding: 24px 45px 60px 45px;
-  }
-  .copy-name {
-    padding: 0;
-    position: relative;
-    top: 0;
   }
   .copy-box {
     width: 100%;
     padding: 0;
-    justify-content: flex-start;
   }
   .logo {
+    justify-self: left;
     padding: 0;
-  }
-  .small {
-    position: absolute;
-    top: 1.875rem;
-    left: 2.813rem;
+    grid-area: logo;
   }
 }
 @media all and (min-width: 1200px) {
@@ -204,7 +200,6 @@
   }
 
   .photo {
-    width: 100%;
     height: auto;
     margin: 0;
   }
@@ -227,13 +222,11 @@
   }
 
   /* FOOTER */
-  .logo-menu-box {
-    padding: 24px 138px 60px 138px;
+  .footerbox {
+    padding: 30px 138px 47px 138px;
   }
 
-  .small {
-    position: absolute;
-    top: 1.875rem;
-    left: 8.625rem;
+  .logo-menu-box {
+    padding: 24px 138px 60px 138px;
   }
 }
